@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Minnehaha Kendo Dojo — Kendo Minneapolis</title>
+  <meta name="description" content="Photos from Minnehaha Kendo Dojo: kendo and martial arts practice, events, and dojo life in Minneapolis and the Twin Cities.">
+  <meta name="keywords" content="kendo Minneapolis, kendo Twin Cities, Minnehaha Kendo Dojo photos, kendo dojo Minnesota, martial arts Minneapolis photos">
+  <link rel="canonical" href="https://www.minnehaha-kendo.com/gallery.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.minnehaha-kendo.com/gallery.html">
+  <meta property="og:title" content="Gallery | Minnehaha Kendo Dojo — Kendo Minneapolis">
+  <meta property="og:description" content="Photos from kendo practice, events, and dojo life at Minnehaha Kendo Dojo in Minneapolis.">
+  <meta property="og:image" content="https://www.minnehaha-kendo.com/images/group-picture.jpg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Minnehaha Kendo Dojo">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gallery | Minnehaha Kendo Dojo — Kendo Minneapolis">
+
+  <link rel="icon" href="images/minnehaha-logo-favicon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="container">
+      <a class="nav-logo" href="index.html">
+        <img src="images/minnehaha-logo.png" alt="Minnehaha Kendo Dojo">
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="guide.html">Beginner's Guide</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="JodoFlyer.pdf" download>Seitei Jodo</a>
+        <a class="nav-fb" href="https://www.facebook.com/groups/88857033497/" target="_blank" rel="noopener" aria-label="Find us on Facebook">
+          <img src="images/FindUsOn_Header_2019.png" alt="Facebook">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <section class="hero gallery-hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container">
+        <h1>Gallery</h1>
+        <p>Practice, events, and dojo life</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div id="gallery-loading" class="content-section">Loading gallery…</div>
+      <div id="gallery-sections" class="gallery-sections" style="display: none;"></div>
+      <div id="gallery-error" class="content-section" style="display: none;">
+        <p>Unable to load the gallery. Please try again later.</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image view">
+    <button type="button" class="lightbox-close" aria-label="Close">×</button>
+    <img class="lightbox-content" src="" alt="">
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="current-year"></span> Minnehaha Kendo Dojo</p>
+    </div>
+  </footer>
+
+  <script type="application/json" id="gallery-data">{"images":["2016.JPG","2017.JPG","2019NewYearsPractice.jpg","DetroitTaikaiDinner.jpg","Dinner.jpg","Group2.jpeg","NewYearsPractice2014.jpg","PXL_20231210_175504825.jpg","PXL_20231210_175857393.jpg"]}</script>
+  <script src="js/site.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+Index page hero — 10 stylized kendo options
+============================================
+
+The index page hero uses one of these images. The active one is set in css/site.css:
+look for "hero-option-1.png" in the .hero-bg rule and change the number to switch.
+
+  hero-option-1.png  — Crossed shinai, dark navy, gold accents, minimalist
+  hero-option-2.png  — Kendo men (helmet) silhouette, amber/copper glow
+  hero-option-3.png  — Kendoka silhouette in chudan stance, motion blur, gold particles
+  hero-option-4.png  — Abstract blade/slash lines, bamboo texture, zen modern
+  hero-option-5.png  — Single vertical shinai, seigaiha wave pattern, muted gold
+  hero-option-6.png  — Art deco kendo men mask, gold filigree, symmetrical
+  hero-option-7.png  — Cherry blossoms, vertical shinai, Japanese aesthetic
+  hero-option-8.png  — Bamboo/shinai in perspective, gold lines, architectural
+  hero-option-9.png  — Sumi-e ink wash kendoka in motion, brush strokes
+  hero-option-10.png — Circular crest with men and crossed shinai, gold on dark
+
+To switch: edit css/site.css, find .hero-bg and change the filename, e.g.:
+  background: url("../images/hero-option-5.png") center center / cover no-repeat;
