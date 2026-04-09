@@ -63,6 +63,10 @@
     "sport": "Kendo"
   }
   </script>
+
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAgovqToTsGUdgh4G6yuvf0FWyhoB0HBBAgEZzJxTgu_zyWMh_51-j-TrX9ZL2Tq3J1_pOxe-Bvc2lBcI&components=hosted-buttons&enable-funding=venmo&currency=USD">
+  </script>
 </head>
 <body>
   <nav class="site-nav">
@@ -135,6 +139,7 @@
                       <li>$40 for the first month dues</li>
                       <li>Gym shorts and t-shirt (or similar athletic wear)</li>
                     </ul>
+                    <p style="margin: 0; color: var(--text-secondary);">Already training / returning member? You can also <a href="#pay-online">pay online below</a>.</p>
                   </div>
                 </div>
               </div>
@@ -144,6 +149,19 @@
             </div>
             <a href="guide.html" class="guide-link">Read the full Beginner's Guide →</a>
           </div>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="pay-online-heading">
+        <h2 id="pay-online-heading">Pay online</h2>
+        <div class="card">
+          <p id="pay-online" style="margin-top: 0;">Use PayPal to pay dues, equipment, and other dojo expenses.</p>
+          <div id="paypal-container-CRA4MPRNRTU9C"></div>
+          <script>
+            paypal.HostedButtons({
+              hostedButtonId: "CRA4MPRNRTU9C",
+            }).render("#paypal-container-CRA4MPRNRTU9C")
+          </script>
         </div>
       </section>
 
