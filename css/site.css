@@ -646,6 +646,138 @@ dt::after {
   background-image: url("../images/hero-option-5.png");
 }
 
+/* ---- Equipment page ---- */
+.equipment-hero .hero-bg {
+  background-image: url("../images/hero-option-8.png");
+}
+
+.equipment-content .card p:last-child {
+  margin-bottom: 0;
+}
+
+.equipment-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.equipment-showcase-item {
+  margin: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.equipment-showcase-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.equipment-showcase-item figcaption {
+  padding: 0.75rem 1rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--accent);
+  border-top: 1px solid var(--border);
+}
+
+.equipment-vendor-list {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.equipment-vendor-list li {
+  margin: 0;
+}
+
+.equipment-vendor-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.equipment-vendor-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  background: var(--bg-secondary);
+  text-decoration: none;
+}
+
+.equipment-vendor-logo {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: var(--bg-elevated);
+  padding: 4px;
+}
+
+.equipment-vendor-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.equipment-vendor-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.equipment-vendor-url {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+/* ---- Affiliations (home page) ---- */
+.affiliations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.affiliation-card h3 {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.affiliation-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.affiliation-header img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: var(--bg-elevated);
+  padding: 4px;
+}
+
 .gallery-sections {
   margin-top: 2rem;
 }
